@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swimwear</title>
+    <!--Links to Style Sheets -->
+    <!-- Browser reads this sheet from the top down so order matters -->
+    <!-- PUT FONTS HERE - you need to load the fonts before you can call them in the style.css-->
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
+    <!--This is a link to gridlex, we want to load the grids before our style.css beacuse we need to load the grids before we style them-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/Styles/style.css">
+    <!-- This is the font awesome Library-->
+    <!-- Font Awesome goes at the bottom before the closing head tag because it's a script tag and script tags usually don't go in the head, font awesome is an exception to this -->
+    <script src="https://use.fontawesome.com/6ade269b9d.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"/>
+
+  </head><!-- Closing Head Tag-->
+  <body>
+    <header>
+<!-- Top Section - White Space -->
+    <nav class="grid-spaceBetween desktop">
+      <div class="col-1"> <!-- Div is just a container, I can use it as many times on the page as I like and can nest it inside of other elements to keep things grouped together. This makes it easier if I want to move a group of items around the page-->
+        <a href="about.html"><img src="../Images/talesmini.png" alt="website logo"></a>
+      </div>
+      <div class="col-5" >
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        <a href="contact.html"><i class="fa fa-comments" aria-hidden="true"></i></a>
+        <!-- <i class="fa fa-envelope" aria-hidden="true"> can be text -->
+      </div>
+      </nav>
+      <div class="mob-show">
+        <a href="#home" title="Home" class="toggle-mobile-menu">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </header>
+<section class="grid-center">
+  <div class="col-6 titleDiv">
+    <h2>Shop</h2>
+  </div>
+  <div class="containerDiv col-8"><!-- This is the container div around all of the pictures and both grids - This is the div you would give margin left and margin right to-->
+    <div class="grid-spaceAround"><!--This is the div to open first grid-->
+      <div class="category categoryOne col-3_md-5_sm-5_xs-12 grid-spaceAround-bottom"><!-- This is the div around the category, you will need to put 2 classes one to style the div it's self, every category div will have this same class, and one class that is different to call in the background image, because there is a different background image for every div -->
+        <div class="col-3">
+
+          <i class="fa fa-cart-plus" aria-hidden="true"></i>
+
+        </div>
+        <div class="col-3">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="category categoryTwo col-3_md-5_sm-5_xs-12 grid-spaceAround-bottom">
+        <div class="col-3">
+          <i class="fa fa-cart-plus" aria-hidden="true"></i>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="category categoryThree col-3_md-5_sm-5_xs-12 grid-spaceAround-bottom">
+        <div class="col-3">
+          <i class="fa fa-cart-plus" aria-hidden="true"></i>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="category categoryFour col-3_md-5_sm-5_xs-12 grid-spaceAround-bottom">
+        <div class="">
+        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+        </div>
+        <div class="">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="category categoryFive col-3_md-5_sm-5_xs-12 grid-spaceAround-bottom">
+        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+        <i class="fa fa-search" aria-hidden="true"></i>
+
+      </div>
+      <div class="category categorySix col-3_md-5_sm-5_xs-12 grid-spaceAround-bottom">
+        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+        <i class="fa fa-search" aria-hidden="true"></i>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <footer>
+<!--Bottom Section - White Space -->
+      <nav>
+        <a href="http://facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="http://pinterest.com"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+      </nav>
+
+
+    </footer>
+
+    <!-- THIS IS WHAT WE'RE TYPING -->
+    <nav id="mobile-menu" class="grid-middle">
+      <a href="#" class="toggle-mobile-menu col-12">
+        <i class="fa fa-times" aria-hidden="true"></i>
+
+      </a>
+      <a href="index.html" class="col-12"><i class="fa fa-home" aria-hidden="true"></i></a>
+      <a href="shop.html" class="col-12"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+      <a href="contact.html" class="col-12"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </nav>
+    <!-- THIS IS WHAT WE'RE TYPING -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="YOUR_API_KEY" id="snipcart"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
